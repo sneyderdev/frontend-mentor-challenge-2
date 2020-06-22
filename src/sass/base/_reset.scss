@@ -1,0 +1,25 @@
+// Style's Reset
+
+@use 'index' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font;
+  color: $light-color;
+  background: $dark-blue-2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header ul {
+  font-family: $secondary-font;
+}
