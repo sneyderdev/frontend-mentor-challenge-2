@@ -10,10 +10,10 @@
 
   &__background {
     position: absolute;
-    background: url('../../../assets/images/bg-curvy-mobile.svg');
+    background: url('../../assets/images/bg-curvy-mobile.svg');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center 38%;
+    background-position: center 40%;
     @include setBoxSize(100%, 100%);
   }
 
