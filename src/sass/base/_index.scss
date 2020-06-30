@@ -6,7 +6,9 @@ $dark-blue-1: hsl(217, 28%, 15%);
 $dark-blue-2: hsl(218, 28%, 13%);
 $dark-blue-3: hsl(216, 53%, 9%);
 $dark-blue-4: hsl(219, 30%, 18%);
-$call-to-action-color: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+$cyan: hsl(176, 68%, 64%);
+$blue: hsl(198, 60%, 50%);
+$gradient-color: linear-gradient(to right, $cyan, $blue);
 
 // Font
 $primary-font: 'Open Sans', sans-serif;
@@ -16,4 +18,11 @@ $n-size: 14px;
 @mixin setBoxSize($v-height, $v-width) {
   height: $v-height;
   width: $v-width;
+}
+
+.container {
+  width: 100%;
+  max-width: 1250px;
+  padding: 0 30px;
+  margin: 0 auto;
 }

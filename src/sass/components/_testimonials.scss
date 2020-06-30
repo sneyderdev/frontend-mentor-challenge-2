@@ -1,0 +1,55 @@
+// Testimonials Styles
+
+@use '../base/index' as *;
+
+.testimonials {
+  display: grid;
+  padding: 15px;
+  margin-bottom: 300px;
+  grid-auto-rows: max-content;
+  row-gap: 25px;
+  background-image: url('../../../assets/images/bg-quotes.png');
+  background-repeat: no-repeat;
+  background-position-x: 20px;
+  background-size: 20px;
+}
+
+.testimonial {
+  padding: 25px 20px;
+  border-radius: 3px;
+  background: $dark-blue-4;
+
+  &__description {
+    line-height: 1.8em;
+    font-size: .75em;
+  }
+}
+
+.user {
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+
+  &__img {
+    @include setBoxSize(25px, 25px);
+
+    img {
+      object-fit: cover;
+      border-radius: 50%;
+      @include setBoxSize(100%, 100%);
+    }
+  }
+
+  &__info {
+    margin-left: 10px;
+    line-height: .8em;
+  }
+
+  &__name {
+    font-size: .7em;
+  }
+
+  &__post {
+    font-size: .5em;
+  }
+}

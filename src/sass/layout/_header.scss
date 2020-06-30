@@ -1,0 +1,29 @@
+// Header Styles
+
+@use '../base/index' as *;
+
+.header {
+  background-color: $dark-blue-1;
+}
+
+.navbar {
+  display: flex;
+  padding: 25px 20px 50px;
+  justify-content: space-between;
+  align-items: center;
+
+  &__img {
+    width: 80px;
+  }
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 20px;
+
+  &__link:hover {
+    transition: color 200ms;
+    color: $cyan;
+  }
+}

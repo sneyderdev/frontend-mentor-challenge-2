@@ -1,0 +1,173 @@
+// Desktop Styles
+
+@use '../base/index' as *;
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    padding: 70px 60px;
+
+    &__img {
+      width: 160px;
+    }
+
+    .menu {
+      column-gap: 60px;
+    }
+  }
+
+  .hero {
+    background: $dark-blue-1;
+
+    &__background {
+      background-image: url('../../../assets/images/bg-curvy-desktop.svg');
+      background-position: bottom;
+    }
+
+    &__title {
+      margin: 30px 0;
+      font-size: 3em;
+    }
+
+    &__description {
+      padding: 0 70px;
+      font-size: 1.4em;
+    }
+  }
+
+  .features {
+
+    .container {
+      max-width: 850px;
+      padding: 0;
+      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+      column-gap: 120px;
+      row-gap: 100px;
+    }
+  }
+
+  .feature {
+
+    &__title {
+      margin: 20px 0 15px;
+      font-size: 1.4em;
+    }
+
+    &__img {
+      @include setBoxSize(80px, 80px);
+    }
+  }
+
+  .how-to {
+
+    .container {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__info {
+      padding: 0 30px 0 50px;
+    }
+
+    &__title {
+      margin-top: 0;
+      font-size: 3em;
+    }
+
+    &__description {
+      font-size: 1.05em;
+    }
+
+    &__text{
+      font-size: 1.05em;
+    }
+  }
+
+  .testimonials {
+    padding: 32px 28px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    background-size: 50px;
+  }
+
+  .testimonial {
+    padding: 40px 30px 30px;
+
+    &__description {
+      font-size: 1em;
+    }
+
+    .user {
+      font-size: 1.1em;
+    }
+  }
+
+  .form {
+    max-width: 850px;
+    padding: 40px 80px;
+
+    &__title {
+      font-size: 2.3em;
+    }
+
+    &__description {
+      margin: 20px 0 35px;
+    }
+
+    &__input {
+      display: grid;
+      grid-template-columns: 1fr 200px;
+      column-gap: 30px;
+    }
+
+    input:first-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .button {
+    width: 280px;
+  }
+
+  .footer {
+    padding-bottom: 100px;
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr repeat(2, auto);
+      column-gap: 110px;
+    }
+
+    &__img {
+      margin-left: 0;
+    }
+
+    &__menu {
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px;
+      grid-area: 2 / 2;
+      font-size: 1.2em;
+    }
+
+    .menu {
+      margin: 0;
+
+      &:first-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .contact {
+    grid-template-columns: 1fr auto;
+    grid-area: 2 / 1;
+    gap: 60px;
+    font-size: 1.2em;
+  }
+
+  .social {
+    grid-area: 2 / 3;
+  }
+}
