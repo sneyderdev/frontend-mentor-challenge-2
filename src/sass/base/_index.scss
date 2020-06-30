@@ -26,3 +26,24 @@ $n-size: 14px;
   padding: 0 30px;
   margin: 0 auto;
 }
+
+.attribution {
+  padding: 20px 0;
+  text-align: center;
+  font-size: .8em;
+  line-height: 1.5em;
+  background: $dark-blue-3;
+
+  img {
+    vertical-align: middle;
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-color: darken($light-color, 50%);
+
+    &:hover {
+      text-decoration-color: $light-color;
+    }
+  }
+}
